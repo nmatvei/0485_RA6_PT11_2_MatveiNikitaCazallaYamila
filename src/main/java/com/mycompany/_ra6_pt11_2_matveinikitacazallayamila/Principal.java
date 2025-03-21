@@ -27,8 +27,8 @@ public class Principal {
         System.out.println("Mida llista p: " + p.sizeLlista());
         System.out.println("Mida llista p: " + a.sizeLlista());
         
-        System.out.println(a.demanarInfo());
-        System.out.println(p.demanarInfo());
+        a.demanarInfo();
+        p.demanarInfo();
         System.out.println("Posició: " + a.getPosicio(0));
         
         System.out.println(a.edatMenor());
@@ -38,8 +38,8 @@ public class Principal {
         System.out.println("--- Eliminar objectes ---");
         a.removeElement(0);
         
-        System.out.println(a.demanarInfo());
-        System.out.println(p.demanarInfo());
+        a.demanarInfo();
+        p.demanarInfo();
         
         
         
