@@ -5,6 +5,7 @@
 package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 
 import java.util.ArrayList;
+
 /**
  *
  * @author Nikita i Yamila
@@ -33,23 +34,37 @@ public class MyGenericArrayList <T> {
         return llista.get(pos);
     }
     
-    public int sizeLlsita() {
+    //FUNCIONA
+    public int sizeLlista() {
         return llista.size();
     }
     
+    //FUNCIONA
     public int edatMenor() {
         
         int minimMenor = 100;
-        T objecte;
-        int edat;
+        int edat = 0;
         
         for (int i = 0; i < llista.size(); i++) {
-            objecte = llista.get(i);
+            
+            if (llista.get(i) instanceof Persona) {
+                Persona p = (Persona) llista.get(i);
+                edat = p.getEdat();
+            } else if (llista.get(i) instanceof Animal) {
+                Animal a = (Animal) llista.get(i);
+                edat = a.getEdat();
+            }
+            
+            if (edat < minimMenor) {
+                minimMenor = edat;
+            }
+            
         }
         
-        return 0;
+        return minimMenor;
     }
     
+    //FUNCIONA
     public String demanarInfo() {
         
         String info = "";
