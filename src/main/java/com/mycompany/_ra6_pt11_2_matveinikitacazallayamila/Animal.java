@@ -5,7 +5,7 @@ package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
  * 
  * @author Nikita i Yamila
  */
-public class Animal {
+public class Animal extends EsserViu {
     /*Declaració de variables i atributs*/
     private int edat;
     private String nom, tipus;
@@ -30,6 +30,7 @@ public class Animal {
         System.out.println("Zzzzzzzz");
     }
     
+    @Override
     public int getEdat() {
         return edat;
     }

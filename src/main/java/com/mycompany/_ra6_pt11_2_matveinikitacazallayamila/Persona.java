@@ -5,7 +5,7 @@ package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
  * 
  * @author Nikita i Yamila
  */
-public class Persona {
+public class Persona extends EsserViu {
     
     /*Declaració de variables i atributs*/
     private int edat;
@@ -43,6 +43,7 @@ public class Persona {
      * 
      * @return edat
      */
+    @Override
     public int getEdat() {
         return edat;
     }

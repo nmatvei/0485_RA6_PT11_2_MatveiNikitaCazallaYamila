@@ -7,11 +7,13 @@ import java.util.ArrayList;
  * quin
  * 
  * @author Nikita i Yamila
+ * @param <T extends EsserViu>
  */
-public class MyGenericArrayList <T> {
+public class MyGenericArrayList <T extends EsserViu> {
     
     /*Declaració d'atributs*/
     private ArrayList<T> llista = new ArrayList<>();
+    private final int EDAT_MAX = Integer.MAX_VALUE;
     
     /*Constructor buït per instànciar un objecte però no donar valor a cap 
     atribut*/
@@ -59,19 +61,22 @@ public class MyGenericArrayList <T> {
      */
     public int edatMenor() {
         
-        int minimMenor = 100;
-        int edat = 0;
+        int minimMenor = EDAT_MAX;
+        int edat;
         
         
         for (int i = 0; i < llista.size(); i++) {
+            T obj = llista.get(i);
+            edat = obj.getEdat();
             
+            /*
             if (llista.get(i) instanceof Persona) {
                 Persona p = (Persona) llista.get(i);
                 edat = p.getEdat();
             } else if (llista.get(i) instanceof Animal) {
                 Animal a = (Animal) llista.get(i);
                 edat = a.getEdat();
-            }
+            }*/
             
             if (edat < minimMenor) {
                 minimMenor = edat;
