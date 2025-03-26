@@ -1,7 +1,7 @@
 package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 
 /**
- * Classe Persona
+ * Classe Persona que estén de la classe abstracte EsserViiu
  * 
  * @author Nikita i Yamila
  */
@@ -22,10 +22,10 @@ public class Persona extends EsserViu {
     public Persona(){
         this(EDAT_DEFAULT, NOM_DEFAULT, COGNOM_DEFAULT, DNI_DEFAULT);
     }
+    
     /**
      * Constructor parametritzat que rep com a paremetres el nom, cognom, edat i
      * dni de la persona.
-     * 
      * @param edat
      * @param nom
      * @param cognom
@@ -39,9 +39,8 @@ public class Persona extends EsserViu {
     }
     
     /**
-     * Mètode GET per conseguir l'edat de la persona
-     * 
-     * @return edat
+     * Mètode sobrescrit GET per conseguir l'edat de la persona
+     * @return edat de la persona
      */
     @Override
     public int getEdat() {
@@ -50,18 +49,15 @@ public class Persona extends EsserViu {
     
     /**
      * Mètode GET per conseguir el nom de la persona
-     * 
-     * @return nom
+     * @return nom de la persona
      */
     public String getNom() {
-      
         return nom;
     }
     
     /**
      * Mètode GET per conseguir el cognom de la persona
-     * 
-     * @return cognom
+     * @return cognom de la persona
      */
     public String getCognom() {
         return cognom;
@@ -69,8 +65,7 @@ public class Persona extends EsserViu {
     
     /**
      * Mètode GET per conseguir el dni de la persona
-     * 
-     * @return dni
+     * @return dni de la persona
      */
     public String getDni() {
         return dni;
@@ -85,7 +80,6 @@ public class Persona extends EsserViu {
     
     /**
      * Mètode sobreescrit toString per poder mostrar la infromació de la persona
-     * 
      * @return informació de la persona
      */
     @Override
@@ -94,5 +88,4 @@ public class Persona extends EsserViu {
                 + cognom + "\n\tDNI: " + dni + "\n\tEdat: " + edat;
         return infoPersona;
     }
-    
 }

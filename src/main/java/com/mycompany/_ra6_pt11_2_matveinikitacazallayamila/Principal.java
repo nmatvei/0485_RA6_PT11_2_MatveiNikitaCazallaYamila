@@ -1,9 +1,9 @@
 package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 
-import java.util.ArrayList;
-
 /**
- * Script on es proven les clàses Animal, Persona i 
+ * Script on es proven les clàses Animal, Persona i les llistes on es guarden 
+ * (MyGenericArrayList).
+ * 
  * @author Nikita i Yamila
  */
 public class Principal {
