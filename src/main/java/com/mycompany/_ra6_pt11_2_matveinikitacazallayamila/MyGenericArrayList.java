@@ -82,20 +82,19 @@ public class MyGenericArrayList <T> {
         return minimMenor;
     }
     
+
     /**
      * Mètode demanarInfo per mostra la informació de tots els objectes de la llista
      * @return informació de cada objecte de la llista
      */
-    public String demanarInfo() {
+    public void demanarInfo() {
         
-        String info = "";
         T objecte;
         
         for (int i = 0; i < llista.size(); i++) {
             objecte = llista.get(i);
-            info += objecte.toString();
+            System.out.println(objecte.toString());
         }
-        return info;
     }
     
     /**
