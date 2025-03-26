@@ -88,9 +88,10 @@ public class MyGenericArrayList <T> {
      * @return informació de cada objecte de la llista
      */
     public void demanarInfo() {
-        
+        /*Declaració de variables*/
         T objecte;
         
+        /*Estructura FOR*/
         for (int i = 0; i < llista.size(); i++) {
             objecte = llista.get(i);
             System.out.println(objecte.toString());
@@ -98,11 +99,12 @@ public class MyGenericArrayList <T> {
     }
     
     /**
-     * Mètode sobrecarregat demanarInfo per poder 
+     * Mètode sobrecarregat demanarInfo per poder demanar la informació d'un objecte
+     * en una posició concreta.
      * @param posicio
      * @return informació de l'objetce en aquella posició
      */
-    public String demanarInfor(int posicio){
+    public String demanarInfo(int posicio){
         String info = "";
         T objecte;
         
