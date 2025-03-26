@@ -1,24 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 
 /**
  * Classe Animal
- * @author Yamila i Nikita
+ * 
+ * @author Nikita i Yamila
  */
 public class Animal {
-    
+    /*Declaració de variables i atributs*/
     private int edat;
     private String nom, tipus;
-    final int EDAT_ANIMAL = 3;
-    final private String NOM_ANIMAL = "", TIPUS_ANIMAL = "";
+    final static int EDAT_DEFAULT = 3;
+    final static private String NOM_ANIMAL = "", TIPUS_ANIMAL = "";
     
     public Animal() {
-        this.nom = NOM_ANIMAL;
-        this.tipus = TIPUS_ANIMAL;
-        this.edat = EDAT_ANIMAL;
+        this(NOM_ANIMAL, TIPUS_ANIMAL, EDAT_DEFAULT);
     }
     
     public Animal(String nom, String tipus, int edat) {

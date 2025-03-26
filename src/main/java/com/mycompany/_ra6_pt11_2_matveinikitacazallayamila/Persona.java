@@ -1,8 +1,9 @@
 package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 
 /**
- *
- * @author nikita i yamila
+ * Classe Persona
+ * 
+ * @author Nikita i Yamila
  */
 public class Persona {
     
@@ -12,9 +13,8 @@ public class Persona {
     private String cognom;
     private String dni;
     final static int EDAT_DEFAULT = 18;
-    final static String NOM_DEFAULT = "";
-    final static String COGNOM_DEFAULT = "";
-    final static String DNI_DEFAULT = "00000000T";
+    final static String NOM_DEFAULT = "", COGNOM_DEFAULT = "", 
+                 DNI_DEFAULT = "00000000T";
     
     /**
      * Constructor per defecte que truca al constructror parametritzat.
@@ -53,8 +53,10 @@ public class Persona {
      * @return nom
      */
     public String getNom() {
+      
         return nom;
     }
+    
     /**
      * Mètode GET per conseguir el cognom de la persona
      * 
@@ -63,6 +65,7 @@ public class Persona {
     public String getCognom() {
         return cognom;
     }
+    
     /**
      * Mètode GET per conseguir el dni de la persona
      * 
@@ -70,6 +73,13 @@ public class Persona {
      */
     public String getDni() {
         return dni;
+    }
+    
+    /**
+     * Mètode saludar per saludar a l'usuari amb el nom de l'objecte
+     */
+    public void saludar(){
+        System.out.println("Hola! Soc el/la " + getNom());
     }
     
     /**

@@ -3,8 +3,8 @@ package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 import java.util.ArrayList;
 
 /**
- *
- * @author nikita i yamila
+ * Script on es proven les clàses Animal, Persona i 
+ * @author Nikita i Yamila
  */
 public class Principal {
 
@@ -14,7 +14,7 @@ public class Principal {
         Animal animal2 = new Animal();
         Persona persona1 = new Persona();
         Persona persona2 = new Persona(4, "Pep", "Pujol", "12345678A");
-        
+        /*
         MyGenericArrayList<Animal> a = new MyGenericArrayList<>();
         MyGenericArrayList<Persona> p = new MyGenericArrayList<>();
         
@@ -29,7 +29,7 @@ public class Principal {
         
         System.out.println(a.demanarInfo());
         System.out.println(p.demanarInfo());
-        System.out.println("Posició: " + a.getPosicio(0));
+        System.out.println("Posició: " + a.getObject(0));
         
         System.out.println(a.edatMenor());
         System.out.println(p.edatMenor());
@@ -39,9 +39,11 @@ public class Principal {
         a.removeElement(0);
         
         System.out.println(a.demanarInfo());
-        System.out.println(p.demanarInfo());
+        System.out.println(p.demanarInfo());*/
         
         
+        
+        System.out.println(animal1.toString());
         
     }
 }

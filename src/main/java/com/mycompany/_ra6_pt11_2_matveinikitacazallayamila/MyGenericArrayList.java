@@ -1,49 +1,67 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany._ra6_pt11_2_matveinikitacazallayamila;
 
 import java.util.ArrayList;
 
 /**
- *
+ * Classe MyGenericArrayList per guardar objectes disn d'ella sense especificar
+ * quin
+ * 
  * @author Nikita i Yamila
  */
 public class MyGenericArrayList <T> {
     
+    /*Declaració d'atributs*/
     private ArrayList<T> llista = new ArrayList<>();
-
-    public MyGenericArrayList() {
-        
-    }
+    
+    /*Constructor buït per instànciar un objecte però no donar valor a cap 
+    atribut*/
+    public MyGenericArrayList() {}
     
     
-    // FUNCIONA
+    /**
+     * Mètode addElement per afegir un objecte dins de la llista
+     * @param objecte
+     */
     public void addElement(T objecte) {
         llista.add(objecte);
     }
     
-    //FUNCIONA
-    public void removeElement(int pos) {
-        llista.remove(pos);
+    /**
+     * Mètode removeElement per treure el objecte en la posició desitjada
+     * @param posicio
+     */
+    public void removeElement(int posicio) {
+        llista.remove(posicio);
     }
     
-    //FUNCIONA
-    public T getPosicio(int pos) {
-        return llista.get(pos);
+    /**
+     * Mètode GET per retornar el objecte de la posició determinada
+     * @param posicio
+     * @return objecte en la posició especificada
+     */
+    public T getObject(int posicio) {
+        return llista.get(posicio);
     }
     
-    //FUNCIONA
+    /**
+     * Mètode que diu la llargada de la llista
+     * 
+     * @return llargada de la llista
+     */
     public int sizeLlista() {
         return llista.size();
     }
     
-    //FUNCIONA
+    /**
+     * Mètode edatMenor per determinar quina és l'edat més petita de la llista
+     * d'objectes que tenim
+     * @return edat més petita de la llista
+     */
     public int edatMenor() {
         
         int minimMenor = 100;
         int edat = 0;
+        
         
         for (int i = 0; i < llista.size(); i++) {
             
@@ -64,7 +82,10 @@ public class MyGenericArrayList <T> {
         return minimMenor;
     }
     
-    //FUNCIONA
+    /**
+     * Mètode demanarInfo per mostra la informació de tots els objectes de la llista
+     * @return informació de cada objecte de la llista
+     */
     public String demanarInfo() {
         
         String info = "";
@@ -77,4 +98,18 @@ public class MyGenericArrayList <T> {
         return info;
     }
     
+    /**
+     * Mètode sobrecarregat demanarInfo per poder 
+     * @param posicio
+     * @return informació de l'objetce en aquella posició
+     */
+    public String demanarInfor(int posicio){
+        String info = "";
+        T objecte;
+        
+        objecte = llista.get(posicio);
+        info += objecte.toString();
+        
+        return info;
+    }
 }
