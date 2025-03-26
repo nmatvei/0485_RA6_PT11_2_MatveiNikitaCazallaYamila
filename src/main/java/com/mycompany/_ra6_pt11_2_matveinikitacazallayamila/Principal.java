@@ -14,5 +14,13 @@ public class Principal {
         Animal animal2 = new Animal();
         Persona persona1 = new Persona();
         Persona persona2 = new Persona(4, "Pep", "Pujol", "12345678A");
+        
+        MyGenericArrayList llista = new MyGenericArrayList();
+        
+        llista.addElement(animal1);
+        llista.addElement(animal2);
+        
+        System.out.println(llista.edatMenor());
+        
     }
 }
