@@ -9,9 +9,10 @@ public abstract class EsserViu{
     /**
      * Mètode dormir per mostrar un missatge que l'esser viu (persona o animal)
      * està dormint
+     * @return soroll al dormir
      */
-    public void dormir(){
-        System.out.println("Zzz...");
+    public String dormir(){
+        return "Zzz...";
     }
     
     /**

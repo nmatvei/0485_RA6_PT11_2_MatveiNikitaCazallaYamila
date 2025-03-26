@@ -34,7 +34,7 @@ public class MyGenericArrayList <T extends EsserViu> {
      */
     public void removeElement(int posicio) throws Exception{
         if (posicio > llista.size() || posicio < 0){
-            throw new IndexOutOfBoundsException("Posició de array fora de rang");
+            throw new IndexOutOfBoundsException("Posició de l'array fora de rang");
         }
         llista.remove(posicio);
     }
@@ -47,7 +47,7 @@ public class MyGenericArrayList <T extends EsserViu> {
      */
     public T getObject(int posicio) throws Exception{
         if (posicio > llista.size() || posicio < 0){
-            throw new IndexOutOfBoundsException("Posició de array fora de rang");
+            throw new IndexOutOfBoundsException("Posició de l'array fora de rang");
         }
         return llista.get(posicio);
     }

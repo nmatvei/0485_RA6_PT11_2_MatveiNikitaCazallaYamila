@@ -73,9 +73,11 @@ public class Persona extends EsserViu {
     
     /**
      * Mètode saludar per saludar a l'usuari amb el nom de l'objecte
+     * @return salutació
      */
-    public void saludar(){
-        System.out.println("Hola! Soc el/la " + getNom());
+    public String saludar(){
+        String salutacio = "Hola! Soc el/la " + nom;
+        return salutacio;
     }
     
     /**

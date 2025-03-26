@@ -34,9 +34,10 @@ public class Animal extends EsserViu {
     
     /**
      * Mètode ferSoroll per grunyir
+     * @return soroll de grunyir
      */
-    public void ferSoroll() {
-        System.out.println("Grrrrrrrr");
+    public String ferSoroll() {
+        return "Grrrrrrrr";
     }
     
     
