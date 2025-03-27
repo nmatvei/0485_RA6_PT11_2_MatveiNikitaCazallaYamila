@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * quin però que estenen de la classe abstracte EsserViu
  * 
  * @author Nikita i Yamila
- * @param <T extends EsserViu>
+ * @param <T> extends EsserViu
  */
 public class MyGenericArrayList <T extends EsserViu> {
     
